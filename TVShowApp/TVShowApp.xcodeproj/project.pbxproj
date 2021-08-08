@@ -17,6 +17,7 @@
 		7FEF0D5526C0402D000D48BC /* TVShowImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF0D5426C0402D000D48BC /* TVShowImage.swift */; };
 		7FEF0D5826C040D9000D48BC /* ShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF0D5726C040D9000D48BC /* ShowViewModel.swift */; };
 		7FEF0D5F26C05388000D48BC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7FEF0D5E26C05388000D48BC /* SDWebImageSwiftUI */; };
+		7FEF0D6226C0564A000D48BC /* TVShowDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF0D6126C0564A000D48BC /* TVShowDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		7FEF0D5126C03E83000D48BC /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		7FEF0D5426C0402D000D48BC /* TVShowImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowImage.swift; sourceTree = "<group>"; };
 		7FEF0D5726C040D9000D48BC /* ShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewModel.swift; sourceTree = "<group>"; };
+		7FEF0D6126C0564A000D48BC /* TVShowDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				7FEF0D3926C03B5D000D48BC /* ShowsView.swift */,
+				7FEF0D6126C0564A000D48BC /* TVShowDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				7FEF0D5526C0402D000D48BC /* TVShowImage.swift in Sources */,
 				7FEF0D3A26C03B5D000D48BC /* ShowsView.swift in Sources */,
+				7FEF0D6226C0564A000D48BC /* TVShowDetailView.swift in Sources */,
 				7FEF0D3826C03B5D000D48BC /* TVShowAppApp.swift in Sources */,
 				7FEF0D5226C03E83000D48BC /* Rating.swift in Sources */,
 				7FEF0D5826C040D9000D48BC /* ShowViewModel.swift in Sources */,

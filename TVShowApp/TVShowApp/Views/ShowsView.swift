@@ -26,6 +26,17 @@ struct ShowsView: View {
                 //Tell it how many columns you want to display, and what the size of those columns should be
                 LazyVGrid(columns: columns, content: {
                     ForEach(showViewModel.shows) { show in //As i fetch these shows
+                        
+                        NavigationLink(destination: TVShowDetailView(tvShow: show), label: {
+                            WebImage(url: show.image.medium)
+                                .resizable()
+                                .indicator(.activity)
+                                .aspectRatio(contentMode: .fit) //Fit this image within the frame
+                                .frame(height: 150)
+                                .cornerRadius(8)
+                            
+                        })
+                        
                         //Create a thing
                         WebImage(url: show.image.medium)
                             .resizable()
