@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		7FEF0D5226C03E83000D48BC /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF0D5126C03E83000D48BC /* Rating.swift */; };
 		7FEF0D5526C0402D000D48BC /* TVShowImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF0D5426C0402D000D48BC /* TVShowImage.swift */; };
 		7FEF0D5826C040D9000D48BC /* ShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEF0D5726C040D9000D48BC /* ShowViewModel.swift */; };
+		7FEF0D5F26C05388000D48BC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7FEF0D5E26C05388000D48BC /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FEF0D5F26C05388000D48BC /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +126,9 @@
 			dependencies = (
 			);
 			name = TVShowApp;
+			packageProductDependencies = (
+				7FEF0D5E26C05388000D48BC /* SDWebImageSwiftUI */,
+			);
 			productName = TVShowApp;
 			productReference = 7FEF0D3426C03B5C000D48BC /* TVShowApp.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 7FEF0D2B26C03B5C000D48BC;
+			packageReferences = (
+				7FEF0D5D26C05387000D48BC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 7FEF0D3526C03B5C000D48BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7FEF0D5D26C05387000D48BC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7FEF0D5E26C05388000D48BC /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FEF0D5D26C05387000D48BC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7FEF0D2C26C03B5C000D48BC /* Project object */;
 }

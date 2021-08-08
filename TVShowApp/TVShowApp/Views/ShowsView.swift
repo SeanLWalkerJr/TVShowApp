@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ShowsView: View {
     
@@ -26,8 +27,12 @@ struct ShowsView: View {
                 LazyVGrid(columns: columns, content: {
                     ForEach(showViewModel.shows) { show in //As i fetch these shows
                         //Create a thing
-                        RoundedRectangle(cornerRadius: 10)
+                        WebImage(url: show.image.medium)
+                            .resizable()
+                            .indicator(.activity)
+                            .aspectRatio(contentMode: .fit) //Fit this image within the frame
                             .frame(height: 150)
+                            .cornerRadius(8)
                     }
                 })
                 .padding()
