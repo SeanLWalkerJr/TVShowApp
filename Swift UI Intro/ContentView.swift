@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    var colors = ["Blue","Green","Red"]
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack
+        {
+            List
+            {
+                ForEach(colors, id: \.self)
+                {color in
+                    Text(color)
+                }
+            }
+        }
     }
 }
 
