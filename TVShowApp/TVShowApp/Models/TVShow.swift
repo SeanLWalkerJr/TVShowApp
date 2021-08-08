@@ -16,7 +16,7 @@ struct TVShow : Decodable, Identifiable //Model for TV Objects from online API
     var language : String
     var genres : [String] //an array that contains the type String
     var status : String
-    var officialSite : URL
+    var officialSite : URL?
     var schedule : Schedule
     var rating : Rating
     var image : TVShowImage
